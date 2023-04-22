@@ -39,13 +39,11 @@ Starting with 2020.3, IntelliJ IDEA comes with a new project wizard that can aut
 Before you start, ensure that you’re using the latest version of the Compose Multiplatform IDE support plugin:
 
 1. Check the latest release version in the [Compose Multiplatform GitHub repository](https://github.com/JetBrains/compose-multiplatform/releases) or on the [Kotlin](https://kotlinlang.org/) website.
-2. Open the `build.gradle.kts` file for your project and update the version:
+2. Open the `gradle.properties` file for your project and update the versions:
 
-    ```kotlin
-    plugins {
-       kotlin("jvm") version "1.8.20"
-       id("org.jetbrains.compose") version "1.4.0"
-    }
+    ```
+    kotlin.version=1.8.20
+    compose.version=1.4.0
     ```
 
 ## Creating a new Compose project without an IDE
